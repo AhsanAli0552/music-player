@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music play with js</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="music-player">
+
+            <nav>
+
+                <div class="nav-link">
+                   <a href=""><i class="fa-solid fa-angle-left"></i></a>
+                </div>
+                <div class="nav-link">
+                    <a href=""><i class="fa-solid fa-bars"></i></a>
+                 </div>
+
+            </nav>
+       <img src="img/music.jpg" alt="">
+       <h1>
+        Despacito
+       </h1>
+       <p>Luis fonsi ft. Ahsan Ali</p>
+
+
+      <audio  id="song">
+        <source src="img/Luis Fonsi -.mp3" type="audio/mpeg">
+      </audio>
+<input type="range" id="progress" >
+     <div class="controls">
+        <div><i class="fa-solid fa-backward"></i></div>
+        <div onclick="playpause()"><i class="fa-solid fa-play" id="ctlicon"></i></div>
+        <div><i class="fa-solid fa-forward"></i></div>
+     </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+<script src="music.js"></script>
+</body>
+
+</html>
